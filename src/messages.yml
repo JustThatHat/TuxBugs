@@ -1,0 +1,43 @@
+# Messages config for TuxBugs
+
+# Should the message prefix defined in messages.yml be used?
+use-prefix: true
+
+# There are variables available to use in the messages. There are:
+# %player% - Displays the sender's username.
+# %bugReport% - Displays the bug reported by the sender. Only for use with the 'on-bug-report' and 'bug-report-notification' messages.
+# These are messages shown upon using a command in the bugs module.
+Messages:
+  # Message prefix
+  prefix: '&e&lBugs&6&l»&r '
+  # Upon the use of /bug report.
+  on-bug-report: '&eThank you &r%player% &efor sending us this bug:\n&r%bugReport% \n&eOur staff members have been notified and will make sure to check it out as soon as possible!'
+  # Notification sent to anyone with the permission tuxbugs.admin or tuxbugs.notify when a player reports a bug.
+  bug-report-notification: '&ePlayer &r%player% &ehas just submitted this bug report:\n&r%bugReport% \n&ePlease check this out and fix it as soon as possible!'
+  # When a player has not described a bug with /bug report.
+  err-no-report: '&cPlease outline the bug that you found.'
+  # When no bugs have been reported on /bug list.
+  err-no-bugs: '&eThere are no bugs! You are doing well!'
+  # When a bug is marked as resolved.
+  on-resolve: '&eBug marked as resolved!'
+  # When the resolve command is used incorrectly.
+  err-resolve-usage: '&cUsage: /bug resolve <ID>'
+  # When a player doesn't have tuxbugs.help but doesn't specify a subcommand.
+  # For example, player does '/bug' but doesn't have tuxbugs.help
+  err-no-help: '&cUsage: /bug report <report>'
+  # When a bug is successfully deleted.
+  on-delete: '&eBug deleted!'
+  # When a user attempts to delete an unresolved bug.
+  err-not-resolved: '&cPlease ensure the bug has been resolved before deleting it!'
+  # When the delete command is used incorrectly.
+  err-delete-usage: '&cUsage: /bug delete <ID>'
+  # When a bug ID cannot be found.
+  err-no-id: '&cBug ID not found. Check ID with /bug list.'
+  # When a user uses an incorrect sub-command.
+  err-not-found: '&cCommand not found.'
+  # When the specified page is not found with /bug list.
+  err-no-page: '&cPage does not exist!'
+  # When the config is reloaded.
+  on-reload: '&eConfig reloaded!'
+  # No permission message.
+  err-no-permission: '&cYou do not have permission to run this command.'

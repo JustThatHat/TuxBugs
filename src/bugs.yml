@@ -1,0 +1,8 @@
+# Storage for bug reports. DO NOT TOUCH the Bug count unless advised.
+Bug count: 0
+Bugs:
+  '1':
+    Player: JustThatHat
+    Resolved: false
+    Server Time: 08/04/2017 06:20:20
+    Report: This is an example bug. It will be overwritten as soon as a real bug is reported!

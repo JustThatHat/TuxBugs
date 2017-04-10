@@ -1,0 +1,10 @@
+# Config for TuxBugs
+# Config file version. DO NOT TOUCH!!!
+config-version: 1.0
+
+# Should administrators be notified when a bug is reported?
+notify-admins: true
+
+# Date and time format for bug reports, e.g. "dd/MM/yyyy HH:mm:ss"
+# It's recommended to set this to just the date if you plan on using the t: parameter in /bug list
+time-format: 'dd/MM/yyyy HH:mm:ss'

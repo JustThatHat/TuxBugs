@@ -1,0 +1,45 @@
+# Plugin created by JustThatHat of Minetux (IP: mc.minetux.com)
+name: TuxBugs
+version: 1.0.2
+author: JustThatHat
+main: com.minetux.tuxbugs.Main
+website: http://minetux.com
+commands:
+  bug:
+    description: Reports a bug.
+    usage: /bug <report:resolve:list:delete:reload> [args]
+permissions:
+  tuxbugs.*:
+    description: Gives access to all TuxBugs commands.
+    default: op
+  tuxbugs.admin:
+    description: Gives access to all TuxBugs bugs commands and subcommands.
+    default: op
+    children:
+      tuxbugs.help: true
+      tuxbugs.list: true
+      tuxbugs.resolve: true
+      tuxbugs.delete: true
+      tuxbugs.reload: true
+      tuxbugs.notify: true
+  tuxbugs.report:
+    description: Allows a user to report a bug with /bug report.
+    default: true
+  tuxbugs.list:
+    description: Allows a user to list reported bugs.
+    default: op
+  tuxbugs.resolve:
+    description: Allows a user to mark a bug as resolved.
+    default: op
+  tuxbugs.delete:
+    description: Allows a user to delete a bug report.
+    default: op
+  tuxbugs.help:
+    description: Allows a user to view the help menu.
+    default: op
+  tuxbugs.reload:
+    description: Allows a user to reload the config.
+    default: op
+  tuxbugs.notify:
+    description: Anyone with this permission will be notified when a bug is reported.
+    default: op
